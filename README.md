@@ -1,16 +1,34 @@
-# light_vinted
+# Application d'achat de vetement avec IA (LIGHT VINTED)
 
-A new Flutter project.
+![image](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRDKMP1M49NG08-dSq5QRU_gqZNGNwqrrX8w&s)
 
-## Getting Started
+## Description du Projet
+L'application développée avec Flutter qui permet aux utilisateurs d'acheter et de mettre en vente des vetements. L'application intègre un modèle d'IA TensorFlow Lite capable de classifier automatiquement les vêtements en quatre catégories : Chappeau, Pantalon, Chaussure et T-Shirt.
 
-This project is a starting point for a Flutter application.
+## Fonctionnalités
+- Ajout de vêtements avec classification automatique par IA
+- Stockage des données sur Firebase
+- Support des images via URL et Base64
 
-A few resources to get you started if this is your first Flutter project:
+## Connexion Test
+Pour tester l'application, utilisez les identifiants suivants :
+* Utilisateur 1
+  - Login : user1
+  - Mot de passe : password123
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+* Utilisateur 2
+  - Login : user2
+  - Mot de passe : 123
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## URLs de Test
+Voici une liste d'URLs pour tester la fonction d'ajout de vêtements et le modèle d'IA qui va avec :
+
+### URLs Classiques
+- Chapeau : `https://wallaroohats.com/cdn/shop/products/Aqua_Hat_Turquiose_8908fd8c-3c3a-4c95-ac3b-cb2af2ef3c66.jpg?v=1675291849`
+- Pantalon : `https://hooke.ca/cdn/shop/files/HOOKE-W-TP-DSB-1.webp?v=1708720548&width=2500`
+- Chaussure : `https://cdn.allbirds.com/image/fetch/q_auto,f_auto/w_1776,f_auto,q_auto/https://fr-fr.allbirds.eu/cdn/shop/products/SKU_SHOE_PAIR_GLOBAL_TODDLER_LK_WOOL_RUNNER_3_BLOOM_RED_NATURAL_WHITE.png?v=1690921113`
+- T-Shirt : `https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQShaBD6ypPYq6RtS7HJcIrKK4tXpLwz-gFpA&s`
+
+### URLs Base64 (exemples)
+```
+data:image/jpeg;base64,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

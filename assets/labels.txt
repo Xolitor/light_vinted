@@ -1,0 +1,4 @@
+0 Couvre-chef
+1 Pantalon
+2 Sneakers
+3 T-Shirt

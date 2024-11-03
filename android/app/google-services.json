@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "512403023667",
+    "project_id": "light-vinted",
+    "storage_bucket": "light-vinted.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:512403023667:android:d534fb4d56fd2aefbe4046",
+        "android_client_info": {
+          "package_name": "com.example.light_vinted"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNLn0Cdx7_y7jZWLwDuP1Z3fvue2qR7Ds"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
